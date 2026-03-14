@@ -84,7 +84,7 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden relative z-50 text-cream p-2"
+          className="md:hidden relative z-50 text-cream p-3"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle Navigation"
         >
@@ -101,7 +101,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-warm-black/98 backdrop-blur-xl h-screen flex flex-col items-center justify-center"
+            className="fixed inset-0 z-40 bg-warm-black/98 backdrop-blur-xl min-h-[100dvh] flex flex-col items-center justify-center"
           >
             <ul className="flex flex-col items-center gap-8 text-center">
               {navLinks.map((link, i) => (
@@ -114,7 +114,7 @@ export function Navbar() {
                   <a 
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="font-display text-3xl text-cream hover:text-accent transition-colors duration-300"
+                    className="font-display text-2xl text-cream hover:text-accent transition-colors duration-300"
                   >
                     {link.name}
                   </a>

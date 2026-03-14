@@ -167,28 +167,28 @@ export function Contact() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div className="flex flex-col gap-2">
                       <label htmlFor="firstName" className="text-xs font-semibold tracking-widest uppercase text-steel">First Name</label>
-                      <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required className="px-4 py-3 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
+                      <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required className="px-4 py-3.5 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label htmlFor="lastName" className="text-xs font-semibold tracking-widest uppercase text-steel">Last Name</label>
-                      <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required className="px-4 py-3 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
+                      <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required className="px-4 py-3.5 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     <div className="flex flex-col gap-2">
                       <label htmlFor="email" className="text-xs font-semibold tracking-widest uppercase text-steel">Email</label>
-                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="px-4 py-3 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
+                      <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required className="px-4 py-3.5 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <label htmlFor="phone" className="text-xs font-semibold tracking-widest uppercase text-steel">Phone</label>
-                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="px-4 py-3 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
+                      <input type="tel" id="phone" name="phone" value={formData.phone} onChange={handleChange} className="px-4 py-3.5 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal" />
                     </div>
                   </div>
 
                   <div className="flex flex-col gap-2 mb-6">
                     <label htmlFor="projectType" className="text-xs font-semibold tracking-widest uppercase text-steel">Project Type</label>
-                    <select id="projectType" name="projectType" value={formData.projectType} onChange={handleChange} className="px-4 py-3 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal appearance-none">
+                    <select id="projectType" name="projectType" value={formData.projectType} onChange={handleChange} className="px-4 py-3.5 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal appearance-none">
                       <option value="">Select a service...</option>
                       <option>Home Remodeling</option>
                       <option>Addition</option>
@@ -202,7 +202,7 @@ export function Contact() {
 
                   <div className="flex flex-col gap-2 mb-8">
                     <label htmlFor="message" className="text-xs font-semibold tracking-widest uppercase text-steel">Tell Us About Your Project</label>
-                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={5} placeholder="Describe your project, timeline, and any questions you have..." className="px-4 py-3 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal resize-y min-h-[120px]"></textarea>
+                    <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={5} placeholder="Describe your project, timeline, and any questions you have..." className="px-4 py-3.5 bg-cream/50 border border-sand/50 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-charcoal resize-y min-h-[120px]"></textarea>
                   </div>
 
                   {status === 'error' && (

@@ -29,7 +29,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-warm-black/60 via-warm-black/30 to-warm-black" />
       </div>
 
-      <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-32 pb-40">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-24 pb-32 md:pt-32 md:pb-40">
         <div className="max-w-4xl">
           
           <motion.div
@@ -46,7 +46,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
-            className="font-display text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-cream leading-[1.05] tracking-tight mb-8 text-balance"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-cream leading-[1.05] tracking-tight mb-8 text-balance"
           >
             Building Better Spaces <br/>
             <span className="text-sand/90 italic font-light tracking-normal">for Bucks County</span> Families.
@@ -94,7 +94,7 @@ export function Hero() {
               { value: 'Bilco', label: 'Certified Installer' },
             ].map((stat, i) => (
               <div key={i} className="py-8 px-4 text-center group cursor-default">
-                <span className="block font-display text-3xl md:text-4xl text-accent mb-1 transition-transform duration-500 group-hover:-translate-y-1">
+                <span className="block font-display text-2xl sm:text-3xl md:text-4xl text-accent mb-1 transition-transform duration-500 group-hover:-translate-y-1">
                   {stat.value}
                 </span>
                 <span className="block text-xs font-semibold tracking-[0.15em] uppercase text-ash group-hover:text-cream transition-colors duration-300">

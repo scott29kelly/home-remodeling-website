@@ -51,7 +51,7 @@ export function About() {
           <div className="lg:col-span-6">
             <ScrollReveal direction="left" delay={0.3} className="relative w-full aspect-[4/5] lg:aspect-[3/4] group">
               {/* Offset decorative border */}
-              <div className="absolute -inset-4 md:-inset-6 border border-sand/20 z-0 translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 transition-transform duration-700 ease-out group-hover:translate-x-2 group-hover:translate-y-2" />
+              <div className="absolute -inset-2 md:-inset-4 lg:-inset-6 border border-sand/20 z-0 translate-x-2 translate-y-2 md:translate-x-4 md:translate-y-4 lg:translate-x-6 lg:translate-y-6 transition-transform duration-700 ease-out group-hover:translate-x-2 group-hover:translate-y-2" />
               
               <div className="absolute inset-0 z-10 overflow-hidden border border-sand/10">
                 <Image 

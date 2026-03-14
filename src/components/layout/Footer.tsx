@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 lg:gap-16 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-8 lg:gap-16 mb-20">
           
           {/* Brand Column (Spans 4) */}
           <div className="md:col-span-4">

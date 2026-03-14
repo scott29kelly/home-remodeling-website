@@ -15,7 +15,7 @@ export function TestimonialCard({ testimonial, className }: TestimonialCardProps
       className
     )}>
       {/* Quote Mark Decoration */}
-      <span className="absolute top-6 left-6 font-display text-[5rem] text-accent opacity-15 leading-none select-none pointer-events-none">
+      <span className="absolute top-6 left-6 font-display text-6xl md:text-[5rem] text-accent opacity-15 leading-none select-none pointer-events-none">
         &ldquo;
       </span>
       

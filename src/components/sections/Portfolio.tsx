@@ -30,7 +30,7 @@ export function Portfolio() {
         </div>
 
         {/* Premium CSS Grid - varying sizes for an editorial feel */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[250px] sm:auto-rows-[300px]">
           {PORTFOLIO.map((item, index) => (
             <ScrollReveal 
               key={item.id} 
@@ -55,12 +55,12 @@ export function Portfolio() {
                 </div>
               )}
               
-              {/* Premium Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-warm-black/90 via-warm-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex flex-col justify-end p-8 md:p-10">
-                <span className="text-accent text-xs font-semibold tracking-[0.15em] uppercase mb-2 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+              {/* Premium Overlay — always visible on mobile (no hover), animated on desktop */}
+              <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/10 to-transparent md:from-warm-black/90 md:via-warm-black/20 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 ease-out flex flex-col justify-end p-6 md:p-10">
+                <span className="text-accent text-xs font-semibold tracking-[0.15em] uppercase mb-2 md:translate-y-4 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 delay-100">
                   {item.location}
                 </span>
-                <h4 className="font-display text-2xl text-cream translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-150">
+                <h4 className="font-display text-xl md:text-2xl text-cream md:translate-y-4 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 delay-150">
                   {item.title}
                 </h4>
               </div>
