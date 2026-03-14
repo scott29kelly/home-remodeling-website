@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { SITE_INFO } from '@/lib/constants';
 
@@ -11,11 +12,21 @@ export function Hero() {
       id="home" 
       className="relative min-h-[100vh] flex items-center bg-warm-black overflow-hidden bg-noise"
     >
-      {/* Background Gradients for Depth */}
+      {/* Background Image */}
+      <Image
+        src="/images/Projects/710 Parker St. Langhorne, Pa/kitchen-island-cabinetry.jpg"
+        alt="Kitchen remodel by Scott Romanoski Construction"
+        fill
+        priority
+        className="object-cover opacity-25"
+        sizes="100vw"
+      />
+
+      {/* Gradient Overlays for Depth & Text Readability */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-accent/5 blur-[120px]" />
         <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] rounded-full bg-slate/50 blur-[150px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-warm-black/40 via-transparent to-warm-black" />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-black/60 via-warm-black/30 to-warm-black" />
       </div>
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10 pt-32 pb-40">

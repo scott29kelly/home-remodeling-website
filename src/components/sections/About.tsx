@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { ABOUT_CONTENT } from '@/lib/constants';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
@@ -52,16 +53,13 @@ export function About() {
               {/* Offset decorative border */}
               <div className="absolute -inset-4 md:-inset-6 border border-sand/20 z-0 translate-x-4 translate-y-4 md:translate-x-6 md:translate-y-6 transition-transform duration-700 ease-out group-hover:translate-x-2 group-hover:translate-y-2" />
               
-              <div className="absolute inset-0 bg-slate/50 z-10 flex flex-col items-center justify-center border border-sand/10">
-                <Camera size={48} strokeWidth={1} className="text-steel/50 mb-4" />
-                <div className="text-center px-6">
-                  <span className="block text-cream/70 font-semibold uppercase tracking-widest text-sm mb-2">
-                    Photo of Scott
-                  </span>
-                  <span className="text-ash/60 text-xs italic">
-                    On job site or completed project
-                  </span>
-                </div>
+              <div className="absolute inset-0 z-10 overflow-hidden border border-sand/10">
+                <Image 
+                  src="/images/scott-romanoski-self-photo-1.jpeg"
+                  alt="Scott Romanoski"
+                  fill
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
               </div>
             </ScrollReveal>
           </div>

@@ -9,6 +9,7 @@ export interface PortfolioItem {
   id: string;
   title: string;
   location: string;
+  image?: string;
   imageAlt: string;
   isTall?: boolean;
 }

@@ -40,9 +40,9 @@ export function Navbar() {
         
         {/* Logo */}
         <Link href="#" className="relative z-50 flex items-center gap-3 group">
-          <div className="w-10 h-10 md:w-12 md:h-12 relative overflow-hidden rounded-sm transition-transform duration-500 group-hover:scale-105">
+          <div className="w-14 h-14 md:w-16 md:h-16 relative overflow-hidden rounded-sm transition-transform duration-500 group-hover:scale-105">
             <Image 
-              src="/images/scott-romanoski-construction-logo.png" 
+              src="/images/logo.webp"
               alt="Scott Romanoski Construction Logo" 
               fill
               className="object-contain"

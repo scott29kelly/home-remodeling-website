@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        charcoal: '#1a1a1a',
-        'warm-black': '#0d0d0d',
-        slate: '#2c2c2c',
-        concrete: '#3d3d3d',
+        charcoal: '#2e2e2e',
+        'warm-black': '#242424',
+        slate: '#454545',
+        concrete: '#525252',
         steel: '#6b6b6b',
         ash: '#9a9a9a',
         sand: '#c4b5a0',

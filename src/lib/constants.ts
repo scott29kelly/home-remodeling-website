@@ -66,64 +66,77 @@ export const ABOUT_CONTENT = {
 
 export const PORTFOLIO: PortfolioItem[] = [
   {
-    id: 'kitchen-langhorne',
+    id: 'kitchen-remodel',
     title: 'Kitchen Remodel',
     location: 'Langhorne, PA',
-    imageAlt: 'Kitchen Remodel in Langhorne, PA',
+    image: '/images/Projects/710 Parker St. Langhorne, Pa/kitchen-island-wide.jpg',
+    imageAlt: 'Complete kitchen remodel with custom island and cabinetry in Langhorne, PA',
     isTall: true
   },
   {
-    id: 'deck-newtown',
-    title: 'Custom Composite Deck',
-    location: 'Newtown, PA',
-    imageAlt: 'Custom Composite Deck in Newtown, PA'
+    id: 'bathroom-renovation',
+    title: 'Bathroom Renovation',
+    location: 'Langhorne, PA',
+    image: '/images/Projects/710 Parker St. Langhorne, Pa/bathroom-full-room.jpg',
+    imageAlt: 'Full bathroom renovation with custom vanity and tile work in Langhorne, PA'
   },
   {
-    id: 'addition-yardley',
-    title: 'Two-Story Addition',
-    location: 'Yardley, PA',
-    imageAlt: 'Two-Story Addition in Yardley, PA'
+    id: 'custom-staircase',
+    title: 'Custom Staircase & Entry',
+    location: 'Langhorne, PA',
+    image: '/images/Projects/710 Parker St. Langhorne, Pa/staircase-newel-entry.jpg',
+    imageAlt: 'Custom oak staircase with turned newel post and marble entry floor'
   },
   {
-    id: 'bath-morrisville',
-    title: 'Master Bath Renovation',
-    location: 'Morrisville, PA',
-    imageAlt: 'Master Bath Renovation in Morrisville, PA'
+    id: 'fireplace-trim',
+    title: 'Fireplace & Trim Work',
+    location: 'Langhorne, PA',
+    image: '/images/Projects/710 Parker St. Langhorne, Pa/fireplace-mantel.jpg',
+    imageAlt: 'Custom fireplace mantel with crown molding and brick surround'
   },
   {
-    id: 'bilco-levittown',
-    title: 'Bilco Door Replacement',
-    location: 'Levittown, PA',
-    imageAlt: 'Bilco Door Replacement in Levittown, PA'
+    id: 'tray-ceiling',
+    title: 'Tray Ceiling & Crown Molding',
+    location: 'Langhorne, PA',
+    image: '/images/Projects/710 Parker St. Langhorne, Pa/bedroom-tray-ceiling.jpg',
+    imageAlt: 'Master bedroom with custom tray ceiling and crown molding detail'
   },
   {
-    id: 'patio-doylestown',
-    title: 'Stone Patio & Hardscaping',
-    location: 'Doylestown, PA',
-    imageAlt: 'Stone Patio & Hardscaping in Doylestown, PA'
+    id: 'powder-room',
+    title: 'Powder Room',
+    location: 'Langhorne, PA',
+    image: '/images/Projects/710 Parker St. Langhorne, Pa/powder-room-vanity.jpg',
+    imageAlt: 'Powder room renovation with dark wood vanity and granite countertop'
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 't1',
-    quote: "Placeholder testimonial — replace with actual client review. Scott and his team were professional, communicative, and delivered exactly what was promised. Our kitchen looks incredible.",
-    author: 'Client Name',
-    location: 'Langhorne, PA — Kitchen Remodel',
+    quote: "Scott is without a doubt the best all around contractor I've come across from framing to finish work, masonry the list goes on. Many contractors claim to treat your house like their own but Scott truly does treat every house like it's his own.",
+    author: 'Josh Sharpe',
+    location: 'Facebook Recommendation',
     stars: 5
   },
   {
     id: 't2',
-    quote: "Placeholder testimonial — replace with actual client review. We've used Scott for three different projects now. Honest pricing, shows up when he says he will, and the work quality is top-notch.",
-    author: 'Client Name',
-    location: 'Newtown, PA — Deck & Patio',
+    quote: "Love Scott's work!",
+    author: 'Tom Aquilone',
+    location: 'Facebook Recommendation',
     stars: 5
   },
   {
     id: 't3',
-    quote: "Placeholder testimonial — replace with actual client review. Scott treated our home like it was his own. The addition blends seamlessly with the original structure. Couldn't be happier.",
-    author: 'Client Name',
-    location: 'Yardley, PA — Home Addition',
+    quote: "I know who to call when I do my master bath!",
+    author: 'Kelley Graff McConnell',
+    location: 'Facebook Recommendation',
+    stars: 5
+  },
+  {
+    id: 't4',
+    quote: "Beautiful work. Wow!",
+    author: 'Maria Anderson',
+    location: 'Facebook Recommendation',
     stars: 5
   }
 ];
@@ -158,7 +171,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
 export const CONTACT_INFO: ContactInfo = {
   phone: '(215) 519-1795',
   email: 'sroman2@verizon.net',
-  address: 'Langhorne, PA 19047',
+  address: '710 Parker St, Langhorne, PA 19047',
   hours: ['Mon–Fri 7:00 AM – 5:00 PM', 'Sat by Appointment']
 };
 

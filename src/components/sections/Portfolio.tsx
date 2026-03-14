@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { PORTFOLIO } from '@/lib/constants';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { ScrollReveal } from '@/components/ui/ScrollReveal';
@@ -39,11 +40,20 @@ export function Portfolio() {
                 item.isTall ? "md:row-span-2" : "row-span-1"
               )}
             >
-              {/* Image Placeholder (Wait for client uploads) */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-steel/50 transition-transform duration-700 group-hover:scale-105">
-                <Camera size={48} strokeWidth={1} className="mb-4 opacity-50" />
-                <span className="text-xs font-semibold tracking-widest uppercase opacity-70">Awaiting Photo</span>
-              </div>
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt={item.imageAlt}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              ) : (
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-steel/50 transition-transform duration-700 group-hover:scale-105">
+                  <Camera size={48} strokeWidth={1} className="mb-4 opacity-50" />
+                  <span className="text-xs font-semibold tracking-widest uppercase opacity-70">Awaiting Photo</span>
+                </div>
+              )}
               
               {/* Premium Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-warm-black/90 via-warm-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out flex flex-col justify-end p-8 md:p-10">

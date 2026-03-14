@@ -16,9 +16,9 @@ export function Footer() {
           {/* Brand Column (Spans 4) */}
           <div className="md:col-span-4">
             <Link href="#" className="inline-flex items-center gap-3 mb-6 group">
-              <div className="w-12 h-12 relative overflow-hidden rounded-sm">
+              <div className="w-16 h-16 relative overflow-hidden rounded-sm">
                 <Image 
-                  src="/images/scott-romanoski-construction-logo.png" 
+                  src="/images/logo.webp"
                   alt="Scott Romanoski Construction Logo" 
                   fill
                   className="object-contain grayscale contrast-125 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
